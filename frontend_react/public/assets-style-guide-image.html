@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Assets, Style Guide &amp; Image</title>
+    <meta name="description" content="Assets, style guide, and image references screen." />
+    <link rel="stylesheet" href="./assets-style-guide-image.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="page-header" role="banner">
+      <div class="header-inner">
+        <div class="title-wrap">
+          <h1 class="page-title">Assets, Style Guide &amp; Image</h1>
+          <p class="page-subtitle">
+            A quick reference for colors, typography, and commonly used assets/images.
+          </p>
+        </div>
+
+        <div class="header-actions" aria-label="Header actions">
+          <button class="btn btn-secondary" type="button" id="btnCopyCssVars">
+            Copy CSS variables
+          </button>
+          <button class="btn btn-primary" type="button" id="btnDownloadJson">
+            Download tokens JSON
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="page" role="main">
+      <div class="grid">
+        <!-- Colors -->
+        <section class="card" aria-labelledby="colorsTitle">
+          <div class="card-header">
+            <h2 id="colorsTitle" class="card-title">Color palette</h2>
+            <p class="card-desc">Click a swatch to copy its hex value.</p>
+          </div>
+
+          <div class="swatches" role="list">
+            <button class="swatch" type="button" data-hex="#3b82f6" role="listitem" aria-label="Primary color #3b82f6">
+              <span class="swatch-chip" style="--swatch: #3b82f6"></span>
+              <span class="swatch-meta">
+                <span class="swatch-name">Primary</span>
+                <span class="swatch-hex">#3b82f6</span>
+              </span>
+              <span class="swatch-action" aria-hidden="true">Copy</span>
+            </button>
+
+            <button class="swatch" type="button" data-hex="#64748b" role="listitem" aria-label="Secondary color #64748b">
+              <span class="swatch-chip" style="--swatch: #64748b"></span>
+              <span class="swatch-meta">
+                <span class="swatch-name">Secondary</span>
+                <span class="swatch-hex">#64748b</span>
+              </span>
+              <span class="swatch-action" aria-hidden="true">Copy</span>
+            </button>
+
+            <button class="swatch" type="button" data-hex="#06b6d4" role="listitem" aria-label="Success color #06b6d4">
+              <span class="swatch-chip" style="--swatch: #06b6d4"></span>
+              <span class="swatch-meta">
+                <span class="swatch-name">Success</span>
+                <span class="swatch-hex">#06b6d4</span>
+              </span>
+              <span class="swatch-action" aria-hidden="true">Copy</span>
+            </button>
+
+            <button class="swatch" type="button" data-hex="#EF4444" role="listitem" aria-label="Error color #EF4444">
+              <span class="swatch-chip" style="--swatch: #EF4444"></span>
+              <span class="swatch-meta">
+                <span class="swatch-name">Error</span>
+                <span class="swatch-hex">#EF4444</span>
+              </span>
+              <span class="swatch-action" aria-hidden="true">Copy</span>
+            </button>
+
+            <button class="swatch" type="button" data-hex="#f9fafb" role="listitem" aria-label="Background color #f9fafb">
+              <span class="swatch-chip swatch-chip--border" style="--swatch: #f9fafb"></span>
+              <span class="swatch-meta">
+                <span class="swatch-name">Background</span>
+                <span class="swatch-hex">#f9fafb</span>
+              </span>
+              <span class="swatch-action" aria-hidden="true">Copy</span>
+            </button>
+
+            <button class="swatch" type="button" data-hex="#ffffff" role="listitem" aria-label="Surface color #ffffff">
+              <span class="swatch-chip swatch-chip--border" style="--swatch: #ffffff"></span>
+              <span class="swatch-meta">
+                <span class="swatch-name">Surface</span>
+                <span class="swatch-hex">#ffffff</span>
+              </span>
+              <span class="swatch-action" aria-hidden="true">Copy</span>
+            </button>
+
+            <button class="swatch" type="button" data-hex="#111827" role="listitem" aria-label="Text color #111827">
+              <span class="swatch-chip" style="--swatch: #111827"></span>
+              <span class="swatch-meta">
+                <span class="swatch-name">Text</span>
+                <span class="swatch-hex">#111827</span>
+              </span>
+              <span class="swatch-action" aria-hidden="true">Copy</span>
+            </button>
+          </div>
+
+          <div class="inline-note" role="status" aria-live="polite" id="toast" hidden></div>
+        </section>
+
+        <!-- Typography -->
+        <section class="card" aria-labelledby="typeTitle">
+          <div class="card-header">
+            <h2 id="typeTitle" class="card-title">Typography</h2>
+            <p class="card-desc">Examples of hierarchy and readability.</p>
+          </div>
+
+          <div class="type-samples">
+            <div class="type-row">
+              <div class="type-label">H1 / 32–36px</div>
+              <div class="type-sample">
+                <div class="sample-h1">Solve Sudoku instantly</div>
+                <div class="sample-meta">Font: Inter • Weight: 700 • Line-height: tight</div>
+              </div>
+            </div>
+
+            <div class="type-row">
+              <div class="type-label">H2 / 20–24px</div>
+              <div class="type-sample">
+                <div class="sample-h2">Enter a puzzle</div>
+                <div class="sample-meta">Font: Inter • Weight: 600</div>
+              </div>
+            </div>
+
+            <div class="type-row">
+              <div class="type-label">Body / 14–16px</div>
+              <div class="type-sample">
+                <p class="sample-body">
+                  Use clear spacing and a simple visual hierarchy. Keep copy concise and readable on all devices.
+                </p>
+                <div class="sample-meta">Font: Inter • Weight: 400–500</div>
+              </div>
+            </div>
+
+            <div class="type-row">
+              <div class="type-label">Mono / code</div>
+              <div class="type-sample">
+                <code class="sample-code">--primary: #3b82f6;</code>
+                <div class="sample-meta">Use monospace for tokens/values</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Logo / Assets -->
+        <section class="card" aria-labelledby="assetsTitle">
+          <div class="card-header">
+            <h2 id="assetsTitle" class="card-title">Logo / assets</h2>
+            <p class="card-desc">Local assets can be referenced from <code>public/</code>.</p>
+          </div>
+
+          <div class="asset-area">
+            <div class="asset-preview" aria-label="Logo preview">
+              <div class="logo-mark" aria-hidden="true">
+                <span class="logo-dot"></span>
+                <span class="logo-bar"></span>
+              </div>
+              <div>
+                <div class="asset-name">Primary mark</div>
+                <div class="asset-hint">SVG preferred • keep clear space</div>
+              </div>
+            </div>
+
+            <div class="asset-actions" aria-label="Asset actions">
+              <button class="btn btn-ghost" type="button" id="btnCopyAssetPath" data-copy="public/logo192.png">
+                Copy example path
+              </button>
+              <button class="btn btn-ghost" type="button" id="btnToggleGrid">
+                Toggle grid overlay
+              </button>
+            </div>
+
+            <div class="asset-guidelines">
+              <ul class="bullets">
+                <li>Use primary on light backgrounds.</li>
+                <li>Ensure minimum contrast for text over surfaces.</li>
+                <li>Prefer SVG for crisp scaling; PNG for photos.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Images -->
+        <section class="card" aria-labelledby="imagesTitle">
+          <div class="card-header">
+            <h2 id="imagesTitle" class="card-title">Images</h2>
+            <p class="card-desc">Example image cards with hover/focus states.</p>
+          </div>
+
+          <div class="images">
+            <article class="image-card" tabindex="0" aria-label="Example image card 1">
+              <div class="image-thumb image-thumb--a" aria-hidden="true"></div>
+              <div class="image-body">
+                <div class="image-title">Illustration</div>
+                <div class="image-sub">Used for empty states &amp; onboarding.</div>
+              </div>
+              <button class="icon-btn" type="button" aria-label="Copy image alt text" data-copy="Sudoku illustration">
+                <span aria-hidden="true">⧉</span>
+              </button>
+            </article>
+
+            <article class="image-card" tabindex="0" aria-label="Example image card 2">
+              <div class="image-thumb image-thumb--b" aria-hidden="true"></div>
+              <div class="image-body">
+                <div class="image-title">Screenshot</div>
+                <div class="image-sub">Keep consistent padding and corners.</div>
+              </div>
+              <button class="icon-btn" type="button" aria-label="Copy image alt text" data-copy="Sudoku UI screenshot">
+                <span aria-hidden="true">⧉</span>
+              </button>
+            </article>
+
+            <article class="image-card" tabindex="0" aria-label="Example image card 3">
+              <div class="image-thumb image-thumb--c" aria-hidden="true"></div>
+              <div class="image-body">
+                <div class="image-title">Pattern</div>
+                <div class="image-sub">Subtle backgrounds using primary tint.</div>
+              </div>
+              <button class="icon-btn" type="button" aria-label="Copy image alt text" data-copy="Geometric pattern">
+                <span aria-hidden="true">⧉</span>
+              </button>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="page-footer" role="contentinfo">
+      <div class="footer-inner">
+        <span class="footer-text">Design tokens: primary, secondary, success, error, background, surface, text.</span>
+        <span class="footer-text footer-right">Standalone screen • No React dependencies</span>
+      </div>
+    </footer>
+
+    <div id="gridOverlay" class="grid-overlay" aria-hidden="true" hidden></div>
+    <script src="./assets-style-guide-image.js"></script>
+  </body>
+</html>
