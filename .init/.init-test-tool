@@ -1,0 +1,4 @@
+{
+    "command": "npm run test",
+    "working_directory": "/home/kavia/workspace/code-generation/sudoku-solver-pro-307223-307232/frontend_react"
+}
